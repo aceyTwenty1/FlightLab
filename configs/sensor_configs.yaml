@@ -1,0 +1,31 @@
+sensors:
+  gps:
+    noise_std: 2.0
+    bias: 0.5
+    drift_rate: 0.001
+    update_rate: 1.0
+  imu_accel:
+    noise_std: 0.5
+    bias: 0.1
+    drift_rate: 0.01
+    update_rate: 100.0
+  imu_gyro:
+    noise_std: 0.01
+    bias: 0.005
+    drift_rate: 0.001
+    update_rate: 100.0
+  barometer:
+    noise_std: 1.0
+    bias: 0.3
+    drift_rate: 0.005
+    update_rate: 10.0
+  magnetometer:
+    noise_std: 0.05
+    bias: 0.02
+    drift_rate: 0.001
+    update_rate: 10.0
+  airspeed:
+    noise_std: 0.5
+    bias: 0.1
+    drift_rate: 0.002
+    update_rate: 50.0

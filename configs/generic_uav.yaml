@@ -1,0 +1,32 @@
+aircraft:
+  name: Generic Fixed-Wing UAV
+  mass: 5.0
+  wing_area: 0.55
+  wingspan: 1.8
+  mean_aerodynamic_chord: 0.33
+  Ixx: 0.824
+  Iyy: 1.135
+  Izz: 1.759
+  Ixz: 0.0
+aerodynamics:
+  CL0: 0.27
+  CL_alpha: 5.14
+  CL_delta_e: 0.44
+  CD0: 0.027
+  CD_k: 0.054
+  Cm0: 0.04
+  Cm_alpha: -0.72
+  Cm_delta_e: -1.55
+  CY_beta: -0.31
+  Cl_beta: -0.08
+  Cl_delta_a: 0.18
+  Cn_beta: 0.06
+  Cn_delta_r: 0.07
+propulsion:
+  max_thrust: 25.0
+limits:
+  max_airspeed: 35.0
+  min_airspeed: 12.0
+  max_delta_e: 0.35
+  max_delta_a: 0.35
+  max_delta_r: 0.35
