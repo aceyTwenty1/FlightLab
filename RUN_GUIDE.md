@@ -385,6 +385,10 @@ modify the `loader.load(filepath=...)` call in `experiments/nasa_validation.py`.
 
 | Command | Purpose |
 |---------|---------|
+| `python run_all.py` | Run all tests + all experiments |
+| `python run_all.py --quick` | Quick mode with shorter simulations |
+| `python run_all.py --tests` | Tests only |
+| `python run_all.py --experiments` | Experiments only |
 | `python -m pytest tests/ -v` | Run all 113 tests |
 | `python experiments/validate_dynamics.py` | Validate 6-DOF dynamics |
 | `python experiments/pid_vs_mpc.py` | PID performance evaluation |

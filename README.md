@@ -58,22 +58,21 @@ python -m pytest tests/ -v
 
 ## Quick Start
 
-### Run the dynamics validation
+**Run everything at once:**
 
 ```bash
-python experiments/validate_dynamics.py
+python run_all.py            # tests + all experiments
+python run_all.py --quick    # shorter simulations
+python run_all.py --tests    # tests only
+python run_all.py --experiments  # experiments only
 ```
 
-### Run the PID controller evaluation
+### Or run individual pieces
 
 ```bash
-python experiments/pid_vs_mpc.py
-```
-
-### Run the full test suite
-
-```bash
-python -m pytest tests/ -v
+python experiments/validate_dynamics.py   # Dynamics validation
+python experiments/pid_vs_mpc.py          # PID controller evaluation
+python -m pytest tests/ -v                # Full test suite (113 tests)
 ```
 
 For detailed instructions on all experiments, library usage, configuration, troubleshooting, and output locations, see **[RUN_GUIDE.md](RUN_GUIDE.md)**.
